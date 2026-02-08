@@ -1,18 +1,115 @@
-# React + Vite
+# 🔐 CipherLab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**The Modern Encryption Lab** — An interactive platform to explore, understand, and experiment with classical cryptographic algorithms.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **🧪 Cipher Playground** — Encrypt and decrypt text using classic ciphers with live output
+- **📚 Interactive Documentation** — Learn the mathematics behind each algorithm
+- **🎨 Modern UI** — Beautiful, responsive design with dark mode support
+- **⚡ Instant Processing** — Everything runs client-side, your data never leaves your device
+- **📱 Fully Responsive** — Works seamlessly on desktop, tablet, and mobile
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🔑 Supported Ciphers
 
-Note: This will impact Vite dev & build performances.
+| Cipher | Type | Description |
+|--------|------|-------------|
+| **Caesar** | Substitution | Classic shift cipher with customizable key |
+| **Hill Cipher** | Polygraphic | Matrix-based encryption using linear algebra |
+| **Playfair** | Digraph | 5x5 matrix substitution cipher |
+| **Rail Fence** | Transposition | Zigzag pattern transposition |
+| **RC4** | Stream | Pseudo-random stream cipher |
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/cipherlab.git
+cd cipherlab
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## 🛠️ Tech Stack
+
+- **React 19** — Latest React with Compiler
+- **Vite 7** — Next-gen frontend tooling
+- **Tailwind CSS 4** — Utility-first CSS framework
+- **Framer Motion** — Fluid animations
+- **Radix UI** — Accessible component primitives
+- **Lucide Icons** — Beautiful icon library
+- **React Router** — Client-side routing
+- **KaTeX** — Mathematical notation rendering
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── aboutUsComponent/    # About page components
+│   ├── docsComponents/      # Documentation components
+│   ├── encryptionComponents/# Cipher-related components
+│   ├── navbar/              # Navigation components
+│   └── ui/                  # Base UI components
+├── lib/                 # Cipher algorithms & utilities
+├── pages/               # Page components
+│   ├── HomePage.jsx
+│   ├── CipherLabPage.jsx
+│   ├── AboutUsPage.jsx
+│   └── Docs.jsx
+└── assets/              # Static assets
+```
+
+## 📖 Pages
+
+- **Home** (`/`) — Landing page with live cipher demo
+- **CipherLab** (`/cipherlab`) — Interactive cipher playground
+- **Documentation** (`/docs`) — Comprehensive cipher documentation
+- **About** (`/about`) — Team and project information
+
+## 🎨 Design Philosophy
+
+CipherLab follows the principle that **security should be understood, not just implemented**. Every feature is designed to be:
+
+- **Educational** — Clear explanations and visualizations
+- **Interactive** — Hands-on learning experience
+- **Accessible** — No prior cryptography knowledge required
+
+## 👨‍💻 Author
+
+**Awais Arif** — Creator & Developer
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin)](https://www.linkedin.com/in/awais-arif-37ab6028b)
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<p align="center">
+  <strong>Don't just use encryption — understand it.</strong>
+</p>
