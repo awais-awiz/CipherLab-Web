@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Shield, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import cipherLabLogo from "@/assets/images/icon.png";
 
 import { DesktopNav } from "./navbar/DesktopNav";
 import { MobileMenu } from "./navbar/MobileMenu";
@@ -44,13 +45,13 @@ export const Navbar = () => {
       <div className="mx-auto flex items-center justify-between h-16 md:h-20 px-4 md:px-8 max-w-7xl">
 
         {/* BRAND LEFT */}
-        <Link to="/" className="flex items-center gap-2 md:gap-3 group">
-          <motion.span
-            whileHover={{ rotate: 15, scale: 1.1 }}
-            className="inline-flex items-center justify-center rounded-xl md:rounded-2xl bg-gradient-to-br from-teal-50 to-emerald-50 dark:from-teal-900/20 dark:to-emerald-900/20 border border-teal-100/50 dark:border-teal-800/50 p-1.5 md:p-2 shadow-sm group-hover:shadow-teal-500/20 transition-all duration-300"
-          >
-            <Shield className="w-4 h-4 md:w-5 md:h-5 text-teal-600 dark:text-teal-400" />
-          </motion.span>
+        <Link to="/" className="flex items-center gap-2.5 md:gap-3 group">
+          <motion.img
+            src={cipherLabLogo}
+            alt="CipherLab Logo"
+            whileHover={{ rotate: 8, scale: 1.08 }}
+            className="w-8 h-8 md:w-9 md:h-9 rounded-xl object-contain shadow-sm group-hover:shadow-teal-500/20 transition-all duration-300"
+          />
           <span className="text-lg md:text-xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-black via-slate-800 to-teal-600 dark:from-white dark:via-slate-200 dark:to-teal-400 group-hover:opacity-80 transition-opacity">
             CipherLab
           </span>

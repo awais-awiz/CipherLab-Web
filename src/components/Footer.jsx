@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "react-router-dom";
-import { ShieldCheck } from "lucide-react";
+import cipherLabLogo from "@/assets/images/icon.png";
 import { CreatorBadge } from "@/components/customComponents/CreatorBadge";
 import { Copyright } from "@/components/customComponents/Copyright";
 
@@ -12,8 +12,8 @@ export const Footer = () => {
 
             <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
                 <div className="col-span-2 lg:col-span-1 space-y-4">
-                    <div className="flex items-center gap-2">
-                        <ShieldCheck className="w-6 h-6 text-teal-400" />
+                    <div className="flex items-center gap-2.5">
+                        <img src={cipherLabLogo} alt="CipherLab Logo" className="w-8 h-8 rounded-lg object-contain" />
                         <span className="text-2xl font-bold tracking-tight">CipherLab</span>
                     </div>
                     <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
